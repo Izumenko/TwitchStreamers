@@ -1,7 +1,6 @@
 body, html {
 	padding: 0;
 	margin: 0;
-	min-width: 1870px;
 	width: 100%;
 	height: 100%;
 	background: rgb(242,242,242);
@@ -10,7 +9,7 @@ body, html {
 
 @font-face {
     font-family: "DIMIS";
-    src: url("../fonts/dimis.ttf");
+    src: url("../fonts/dimis.TTF");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
@@ -35,24 +34,43 @@ h1 {
 }
 
 .top-games {
-	width: 45%;
+	width: 50%;
+	min-width: 841px;
 	height: 100px;
-	margin-left: 1%;
+	margin: 0 auto;
 	text-align: center;
 }
 
 .stream-line {
-	width: 45%;
+	width: 50%;
+	min-width: 841px;
+	text-align: left;
 	background: white;
-	margin: 2px;
 	display: flex;
-	border-radius: 10px 0 0 10px;
-	margin-left: 1%;
+	border-radius: 10px;
+	margin: 3px auto;
 	border: 1px solid rgb(100,65,164);
 }
 
 .column-left {
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.top-games-container {
 	margin-top: 77px;
+}
+
+.top-games-container img {
+	width: 75px;
+	height: 75px;
+	border: 2px solid rgb(143,143,143);
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
 .column img {
@@ -82,9 +100,9 @@ h1 {
 }
 
 .player-container {
-	position: fixed;
-	left: 48%;
-	top: 15%;
+	width: 800px;
+	height: 480px;
+	margin: 15px auto;
 }
 
 .button-wrapper {
